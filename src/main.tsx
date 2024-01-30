@@ -6,11 +6,16 @@ import Preparation from "./projects/RecipePage/components/Preparation/Preparatio
 import Ingredients from "./projects/RecipePage/components/Ingredients/Ingredients.tsx";
 import Instructions from "./projects/RecipePage/components/Instructions/Instructions.tsx";
 import Nutrition from "./projects/RecipePage/components/Nutrition/Nutrition.tsx";
+import Recipe from "./projects/RecipePage/components/Recipe/Recipe.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/recipe",
+    element: <Recipe />,
   },
   {
     path: "/preparation",

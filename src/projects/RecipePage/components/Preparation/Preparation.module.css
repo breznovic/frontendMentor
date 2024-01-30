@@ -1,0 +1,25 @@
+.layout {
+  background-color: hsl(330, 100%, 98%);
+  width: 800px;
+  height: 350px;
+}
+
+.title {
+  color: hsl(332, 51%, 32%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 20px 0px 0px 23px;
+}
+
+.list {
+  font-family: "Outfit", sans-serif;
+}
+
+.list span {
+  margin-left: 10px;
+}
+
+.bold {
+  font-weight: 700;
+}

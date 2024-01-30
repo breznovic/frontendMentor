@@ -25,23 +25,3 @@
   margin: 15px 0px 0px 0px;
   max-width: 800px;
 }
-
-.gridMenu {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 20px;
-}
-
-.gridMenu div {
-  color: hsl(14, 45%, 36%);
-  font-family: "Outfit", sans-serif;
-  font-size: 25px;
-  font-weight: 600;
-  padding: 30px 50px 0px 40px;
-}
-
-.gridMenu div:hover {
-  color: hsl(14, 93%, 48%);
-  cursor: pointer;
-}
