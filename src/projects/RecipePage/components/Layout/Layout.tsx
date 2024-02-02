@@ -9,7 +9,9 @@ type LinkType = {
 const Layout = () => {
   const Link = ({ url, title }: LinkType) => {
     const navigate = useNavigate();
-    const handleClick = () => navigate(url);
+    const handleClick = () => {
+      navigate(url);
+    };
 
     return <div onClick={handleClick}>{title}</div>;
   };
