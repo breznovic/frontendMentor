@@ -1,21 +1,8 @@
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import s from "./Layout.module.css";
-
-type LinkType = {
-  url: string;
-  title: string;
-};
+import { Link } from "../../../../../common/Link/Link";
 
 const Layout = () => {
-  const Link = ({ url, title }: LinkType) => {
-    const navigate = useNavigate();
-    const handleClick = () => {
-      navigate(url);
-    };
-
-    return <div onClick={handleClick}>{title}</div>;
-  };
-
   return (
     <div className={s.main}>
       <div className={s.layout}>

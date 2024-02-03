@@ -2,11 +2,12 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Preparation from "./components/projects/RecipePage/components/Preparation/Preparation.tsx";
-import Ingredients from "./components/projects/RecipePage/components/Ingredients/Ingredients.tsx";
-import Instructions from "./components/projects/RecipePage/components/Instructions/Instructions.tsx";
-import Nutrition from "./components/projects/RecipePage/components/Nutrition/Nutrition.tsx";
-import Recipe from "./components/projects/RecipePage/components/Recipe/Recipe.tsx";
+import Preparation from "./components/projects/Junior/RecipePage/components/Preparation/Preparation.tsx";
+import Ingredients from "./components/projects/Junior/RecipePage/components/Ingredients/Ingredients.tsx";
+import Instructions from "./components/projects/Junior/RecipePage/components/Instructions/Instructions.tsx";
+import Nutrition from "./components/projects/Junior/RecipePage/components/Nutrition/Nutrition.tsx";
+import Recipe from "./components/projects/Junior/RecipePage/components/Recipe/Recipe.tsx";
+import ExpensesCalculator from "./components/projects/Junior/ExpensesCalculator/ExpensesCalculator.tsx";
 
 const router = createBrowserRouter([
   {
@@ -33,10 +34,24 @@ const router = createBrowserRouter([
     path: "/nutrition",
     element: <Nutrition />,
   },
+  {
+    path: "/calculator",
+    element: <ExpensesCalculator />,
+  },
+  /* {
+    path: "/junior",
+    element: <Junior />,
+  },
+  {
+    path: "/intermediate",
+    element: <Intermediate />,
+  },
+  {
+    path: "/advanced",
+    element: <Advanced />,
+  }, */
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <RouterProvider router={router} />
 );
-
-

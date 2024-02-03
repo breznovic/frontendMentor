@@ -5,7 +5,7 @@ const Sidebar = () => {
   return (
     <div className={s.main}>
       <img src={logo} />
-      <div>My challenges</div>
+      <div className={s.title}>My challenges</div>
       <div className={s.menu}>
         <div>Junior</div>
         <div>Intermediate</div>
