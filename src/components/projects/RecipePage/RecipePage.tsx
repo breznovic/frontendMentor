@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import s from "./RecipePage.module.css";
 import Recipe from "./components/Recipe/Recipe";
 import Preparation from "./components/Preparation/Preparation";
 import Ingredients from "./components/Ingredients/Ingredients";

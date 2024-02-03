@@ -2,11 +2,11 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Preparation from "./projects/RecipePage/components/Preparation/Preparation.tsx";
-import Ingredients from "./projects/RecipePage/components/Ingredients/Ingredients.tsx";
-import Instructions from "./projects/RecipePage/components/Instructions/Instructions.tsx";
-import Nutrition from "./projects/RecipePage/components/Nutrition/Nutrition.tsx";
-import Recipe from "./projects/RecipePage/components/Recipe/Recipe.tsx";
+import Preparation from "./components/projects/RecipePage/components/Preparation/Preparation.tsx";
+import Ingredients from "./components/projects/RecipePage/components/Ingredients/Ingredients.tsx";
+import Instructions from "./components/projects/RecipePage/components/Instructions/Instructions.tsx";
+import Nutrition from "./components/projects/RecipePage/components/Nutrition/Nutrition.tsx";
+import Recipe from "./components/projects/RecipePage/components/Recipe/Recipe.tsx";
 
 const router = createBrowserRouter([
   {

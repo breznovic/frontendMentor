@@ -1,5 +1,5 @@
 import s from "./Recipe.module.css";
-import recipeImage from "../../../../assets/images/image-omelette.jpeg";
+import recipeImage from "../../../../../assets/images/image-omelette.jpeg";
 
 const Recipe = () => {
   return (
