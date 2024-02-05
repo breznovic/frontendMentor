@@ -1,0 +1,42 @@
+.container {
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.column {
+  background-color: hsl(10, 79%, 65%);
+  height: 140px;
+  width: 45px;
+  border-radius: 10%;
+}
+
+.column:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.column:hover::before {
+  content: attr(data-amount);
+  position: absolute;
+  margin: 0px 0px 0px 21px;
+  transform: translateX(-50%);
+  background-color: hsl(25, 47%, 15%);
+  color: rgba(255, 255, 255);
+  padding: 5px 5px;
+  border-radius: 5px;
+  opacity: 1;
+  /* TODO: remove opacity */ 
+}
+
+.columnTitle {
+  color: hsl(28, 10%, 53%);
+  text-align: center;
+  margin: 7px 0px 0px 0px;
+}
+
+.activeColumn {
+  background-color: hsl(186, 34%, 60%);
+}

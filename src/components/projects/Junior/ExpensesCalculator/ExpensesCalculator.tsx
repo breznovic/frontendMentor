@@ -1,6 +1,6 @@
 import s from "./ExpensesCalculator.module.css";
 import Balance from "./components/Balance/Balance";
-import Chart from "./components/Chart/Chart";
+import ChartTable from "./components/ChartTable/ChartTable";
 
 const ExpensesCalculator = () => {
   return (
@@ -9,7 +9,7 @@ const ExpensesCalculator = () => {
         <Balance />
       </div>
       <div className={s.chart}>
-        <Chart />
+        <ChartTable />
       </div>
     </div>
   );
@@ -20,13 +20,6 @@ export default ExpensesCalculator;
 /*     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
  
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
 
   
     */

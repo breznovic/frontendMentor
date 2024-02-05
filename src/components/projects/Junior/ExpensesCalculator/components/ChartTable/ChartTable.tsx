@@ -1,10 +1,13 @@
-import s from "./Chart.module.css";
+import s from "./ChartTable.module.css";
+import SpendingChart from "./SpendingChart/SpendingChart";
 
-const Chart = () => {
+const ChartTable = () => {
   return (
     <div className={s.container}>
       <div className={s.title}>Spending - Last 7 days</div>
-      <div className={s.chart}>Chart</div>
+      <div className={s.chart}>
+        <SpendingChart />
+      </div>
       <hr className={s.hr} />
       <div className={s.total}>
         <div>
@@ -20,6 +23,6 @@ const Chart = () => {
   );
 };
 
-export default Chart;
+export default ChartTable;
 
 //   chart column background-color: hsl(10, 79%, 65%);
