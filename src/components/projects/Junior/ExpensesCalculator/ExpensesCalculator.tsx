@@ -5,10 +5,10 @@ import Chart from "./components/Chart/Chart";
 const ExpensesCalculator = () => {
   return (
     <div className={s.main}>
-      <div>
+      <div className={s.balance}>
         <Balance />
       </div>
-      <div>
+      <div className={s.chart}>
         <Chart />
       </div>
     </div>
@@ -20,12 +20,6 @@ export default ExpensesCalculator;
 /*     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
  
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
   mon
   tue
   wed
@@ -34,9 +28,5 @@ export default ExpensesCalculator;
   sat
   sun
 
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
+  
     */

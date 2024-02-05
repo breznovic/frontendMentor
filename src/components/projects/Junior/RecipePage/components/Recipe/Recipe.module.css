@@ -6,16 +6,16 @@
 }
 
 .container img {
-  width: 800px;
-  height: 350px;
-  border-radius: 4%;
+  width: 810px;
+  height: 380px;
+  border-radius: 20%;
   margin: 35px 0px 0px 0px;
 }
 
 .title {
   font-family: "Young Serif", serif;
   font-size: 45px;
-  margin: 30px 270px 0px 0px;
+  margin: 20px 270px 0px 0px;
 }
 
 .subtitle {

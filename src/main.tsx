@@ -6,8 +6,8 @@ import Preparation from "./components/projects/Junior/RecipePage/components/Prep
 import Ingredients from "./components/projects/Junior/RecipePage/components/Ingredients/Ingredients.tsx";
 import Instructions from "./components/projects/Junior/RecipePage/components/Instructions/Instructions.tsx";
 import Nutrition from "./components/projects/Junior/RecipePage/components/Nutrition/Nutrition.tsx";
-import Recipe from "./components/projects/Junior/RecipePage/components/Recipe/Recipe.tsx";
 import ExpensesCalculator from "./components/projects/Junior/ExpensesCalculator/ExpensesCalculator.tsx";
+import RecipePage from "./components/projects/Junior/RecipePage/RecipePage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/recipe",
-    element: <Recipe />,
+    element: <RecipePage />,
   },
   {
     path: "/preparation",
