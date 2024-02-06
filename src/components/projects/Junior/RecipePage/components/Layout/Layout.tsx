@@ -8,10 +8,10 @@ const Layout = () => {
       <div className={s.layout}>
         <Outlet />
         <div className={s.gridMenu}>
-          <Link url="/preparation" title="Preparation time" />
-          <Link url="/ingredients" title="Ingredients" />
-          <Link url="/instructions" title="Instructions" />
-          <Link url="/nutrition" title="Nutrition" />
+          <Link url="/recipe/preparation" title="Preparation time" />
+          <Link url="/recipe/ingredients" title="Ingredients" />
+          <Link url="/recipe/instructions" title="Instructions" />
+          <Link url="/recipe/nutrition" title="Nutrition" />
         </div>
       </div>
     </div>
