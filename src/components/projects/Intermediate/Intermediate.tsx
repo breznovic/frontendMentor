@@ -1,20 +1,14 @@
 import { useState } from "react";
 import Sidebar from "../../common/Sidebar/Sidebar";
-import ExpensesCalculator from "./ExpensesCalculator/ExpensesCalculator";
-import s from "./Junior.module.css";
-import RecipePage from "./RecipePage/RecipePage";
-
-export type ComponentType = {
-  component: JSX.Element;
-  url: string;
-};
+import s from "./Intermediate.module.css";
+import { ComponentType } from "../Junior/Junior";
+import JobList from "./JobList/JobList";
 
 let apps: ComponentType[] = [
-  { component: <RecipePage />, url: "/junior/recipe" },
-  { component: <ExpensesCalculator />, url: "/junior/calculator" },
+  { component: <JobList />, url: "/intermediate/joblist" }, 
 ];
 
-const Junior = () => {
+const Intermediate = () => {
   const [appIndex, setAppIndex] = useState(0);
   const currentApp = apps[appIndex].component;
 
@@ -44,4 +38,4 @@ const Junior = () => {
   );
 };
 
-export default Junior;
+export default Intermediate;

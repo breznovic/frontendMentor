@@ -16,7 +16,7 @@ const Sidebar = () => {
       <div className={s.title}>My challenges</div>
       <div className={s.menu}>
         <Link title="Junior" url="/junior" />
-        <div>Intermediate</div>
+        <Link title="Intermediate" url="/intermediate" />
         <div>Advanced</div>
       </div>
     </div>

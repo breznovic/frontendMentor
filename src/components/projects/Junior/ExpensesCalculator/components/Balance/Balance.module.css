@@ -33,4 +33,5 @@
   background-color: hsl(10, 79%, 65%);
   height: 60px;
   width: 60px;
+  pointer-events: none;
 }
