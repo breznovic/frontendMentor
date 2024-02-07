@@ -31,9 +31,14 @@ const Junior = () => {
   return (
     <div className={s.main}>
       <Sidebar />
-      <button onClick={prevApp}>-</button>
-      <div>{currentApp}</div>
-      <button onClick={nextApp}>+</button>
+      <div className={s.btnGroup}>
+        <button onClick={prevApp} className={s.prevBtn}>
+          &lt;
+        </button>
+        <div>{currentApp}</div>
+        <button onClick={nextApp} className={s.nextBtn}>&gt;</button>
+      </div>
+      
     </div>
   );
 };

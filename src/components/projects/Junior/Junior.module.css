@@ -3,3 +3,24 @@
   justify-content: space-between;
 }
 
+.main button {
+  color: #1f1f1f;
+  background-color: #1f1f1f93;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prevBtn {
+  position: absolute;
+  
+}
+.nextBtn {
+  position: absolute;
+  margin: 0px 0px 0px 1380px;
+}
