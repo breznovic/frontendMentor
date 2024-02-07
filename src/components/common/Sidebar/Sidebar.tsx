@@ -13,7 +13,6 @@ const Sidebar = () => {
   return (
     <div className={s.main}>
       <img src={logo} onClick={handleLogoClick} />
-
       <div className={s.title}>My challenges</div>
       <div className={s.menu}>
         <Link title="Junior" url="/junior" />

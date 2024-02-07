@@ -9,3 +9,75 @@
   font-size: 30px;
   color: rgb(50, 50, 50);
 }
+
+@media (max-width: 575.98px) {
+  .main {
+    min-width: 80px;
+  }
+
+  .text {
+    margin: 280px 0px 0px 35px;
+    font-size: 19px;
+    color: red;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .main {
+    min-width: 200px;
+  }
+
+  .text {
+    margin: 280px 0px 0px 75px;
+    font-size: 22px;
+    color: rgb(25, 0, 255);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main {
+    min-width: 400px;
+  }
+
+  .text {
+    margin: 280px 0px 0px 80px;
+    font-size: 24px;
+    color: rgb(255, 238, 0);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .main {
+    min-width: 600px;
+  }
+
+  .text {
+    margin: 280px 0px 0px 105px;
+    font-size: 26px;
+    color: rgb(94, 255, 0);
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    min-width: 800px;
+  }
+
+  .text {
+    margin: 280px 0px 0px 155px;
+    font-size: 28px;
+    color: rgb(255, 0, 191);
+  }
+}
+
+@media (min-width: 1400px) {
+  .main {
+    min-width: 1000px;
+  }
+
+  .text {
+    margin: 280px 0px 0px 255px;
+    font-size: 30px;
+    color: rgb(255, 123, 0);
+  }
+}
