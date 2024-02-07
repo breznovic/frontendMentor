@@ -1,13 +1,12 @@
-import Sidebar from "./components/Sidebar/Sidebar";
 import s from "./App.module.css";
-import ExpensesCalculator from "./components/projects/Junior/ExpensesCalculator/ExpensesCalculator";
-import RecipePage from "./components/projects/Junior/RecipePage/RecipePage";
+import Main from "./components/common/Main/Main";
+import Sidebar from "./components/common/Sidebar/Sidebar";
 
 function App() {
   return (
     <div className={s.main}>
       <Sidebar />
-      <RecipePage />
+      <Main />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 type LinkType = {
   url: string;
-  title: string;
+  title?: string;
 };
 
 export const Link = ({ url, title }: LinkType) => {

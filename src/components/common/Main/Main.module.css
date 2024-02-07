@@ -1,0 +1,11 @@
+.main {
+  background-color: hsla(31, 87%, 50%, 0.226);
+  min-width: 1419px;
+}
+
+.text {
+  margin: 280px 0px 0px 275px;
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  color: rgb(50, 50, 50);
+}
