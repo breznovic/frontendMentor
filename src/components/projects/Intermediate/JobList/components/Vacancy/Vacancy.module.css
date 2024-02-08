@@ -4,23 +4,27 @@
   background-color: white;
   box-shadow: 0 2px 4px hsl(180, 29%, 50%);
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .description {
   font-weight: 700;
   font-size: 17px;
+  justify-content: flex-start;
 }
 
 .tags {
   font-weight: 700;
   display: flex;
-  flex-direction: row;
   max-height: 30px;
+  margin: 0px 50px 0px 0px;
+  justify-content: flex-end;
 }
 
 .tagsContainer {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: stretch;
 }
 
 .tag {
