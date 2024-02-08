@@ -6,12 +6,73 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 80px 0px -65px 0px;
 }
 
 .description {
+  height: 120px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.description img {
+  pointer-events: none;
+  background-color: transparent;
+  margin: 8px 0px 0px 0px;
+  padding-right: 20px;
+}
+
+.companyDescription {
+  margin: 40px 0px 0px 0px;
+}
+
+.companyInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin: -40px 0px 8px 0px;
+}
+.companyTitle {
+  color: hsl(180, 29%, 50%);
+  font-size: 16px;
+  font-weight: 700;
+  gap: -10px;
+}
+
+.new {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+  padding: 4px 3px 0px 3px;
+  border-radius: 22%;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.featuring {
+  background-color: hsl(180, 14%, 20%);
+  color: white;
+  padding: 4px 5px 0px 5px;
+  border-radius: 19%;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.position {
   font-weight: 700;
   font-size: 17px;
-  justify-content: flex-start;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.additionalInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  color: hsl(180, 8%, 52%);
+  white-space: nowrap;
 }
 
 .tags {

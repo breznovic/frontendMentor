@@ -11,7 +11,6 @@ const VacancyList = () => {
         contract={v.contract}
         featured={v.featured}
         id={v.id}
-        logo={v.logo}
         new={v.new}
         role={v.role}
         level={v.level}
