@@ -3,6 +3,7 @@ import Vacancy from "../Vacancy/Vacancy";
 import s from "./VacancyList.module.css";
 import vacancies from "../../data.json";
 import Pagination from "../Pagination/Pagination";
+import SearchBar from "../SearchBar/SearchBar";
 
 const VacancyList = () => {
   const itemsPerPage = 5;
@@ -20,6 +21,9 @@ const VacancyList = () => {
 
   return (
     <div>
+      <div>
+        <SearchBar />
+      </div>
       <div>
         {currentVacancies.map((v) => (
           <div key={v.id}>

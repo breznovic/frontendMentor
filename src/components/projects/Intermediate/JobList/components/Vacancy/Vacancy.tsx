@@ -1,5 +1,7 @@
 import s from "./Vacancy.module.css";
 import logo from "../../images/faceit.svg";
+import { useContext } from "react";
+import { ActiveTagsContext } from "../../AppContext";
 
 export type VacancyType = {
   id: number;
@@ -17,14 +19,32 @@ export type VacancyType = {
 };
 
 const Vacancy = (props: VacancyType) => {
+  const { activeTags, updateActiveTags } = useContext(ActiveTagsContext);
+
+  const handleClick = (tag: string) => {
+    if (activeTags.includes(tag)) {
+      updateActiveTags(activeTags.filter((activeTag) => activeTag !== tag));
+    } else {
+      updateActiveTags([...activeTags, tag]);
+    }
+  };
+
   let languages = props.languages.map((l, index) => (
-    <div key={index} className={s.tag}>
+    <div
+      key={index}
+      className={`${s.tag} ${activeTags.includes(l) ? s.active : ""}`}
+      onClick={() => handleClick(l)}
+    >
       {l}
     </div>
   ));
 
   let tools = props.tools.map((t, index) => (
-    <div key={index} className={s.tag}>
+    <div
+      key={index}
+      className={`${s.tag} ${activeTags.includes(t) ? s.active : ""}`}
+      onClick={() => handleClick(t)}
+    >
       {t}
     </div>
   ));
@@ -33,7 +53,7 @@ const Vacancy = (props: VacancyType) => {
     <div className={s.mainBlock}>
       <div className={s.description}>
         <div>
-          <img src={logo} />
+          <img src={logo} alt="Logo" />
         </div>
         <div className={s.companyDescription}>
           <div className={s.companyInfo}>
@@ -45,17 +65,31 @@ const Vacancy = (props: VacancyType) => {
           <div className={s.additionalInfo}>
             <div>{props.postedAt}</div>
             <div>&#8226;</div>
-            <div> {props.contract}</div>
+            <div>{props.contract}</div>
             <div>&#8226;</div>
             <div>{props.location}</div>
           </div>
         </div>
       </div>
       <div className={s.tags}>
-        <div className={s.tag}>{props.role}</div>
-        <div className={s.tag}>{props.level}</div>
-        <div className={s.tagsContainer}>{languages}</div>
-        <div className={s.tagsContainer}>{tools}</div>
+        <div
+          className={`${s.tag} ${
+            activeTags.includes(props.role) ? s.active : ""
+          }`}
+          onClick={() => handleClick(props.role)}
+        >
+          {props.role}
+        </div>
+        <div
+          className={`${s.tag} ${
+            activeTags.includes(props.level) ? s.active : ""
+          }`}
+          onClick={() => handleClick(props.level)}
+        >
+          {props.level}
+        </div>
+        <div className={`${s.tagsContainer}`}>{languages}</div>
+        <div className={`${s.tagsContainer}`}>{tools}</div>
       </div>
     </div>
   );

@@ -93,4 +93,10 @@
   color: hsl(180, 29%, 50%);
   padding: 4px 7px;
   margin: 0px 0px 0px 10px;
+  user-select: none;
+}
+
+.active {
+  color: hsl(180, 31%, 95%);
+  background-color: hsl(180, 29%, 50%);
 }

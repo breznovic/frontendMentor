@@ -1,3 +1,5 @@
+import s from "./Pagination.module.css";
+
 type PropsType = {
   itemsPerPage: number;
   totalItems: number;
@@ -19,14 +21,14 @@ const Pagination = (props: PropsType) => {
 
   return (
     <nav>
-      <ul className="pagination">
-        {pageNumbers.map((pageNumber) => (
+      <ul className={s.pagination}>
+        {pageNumbers.map((p) => (
           <li
-            key={pageNumber}
-            className={pageNumber === props.currentPage ? "active" : ""}
-            onClick={() => handlePageChange(pageNumber)}
+            key={p}
+            className={p === props.currentPage ? s.active : ""}
+            onClick={() => handlePageChange(p)}
           >
-            {pageNumber}
+            {p}
           </li>
         ))}
       </ul>
