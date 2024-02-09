@@ -1,7 +1,7 @@
 import s from "./Vacancy.module.css";
 import logo from "../../images/faceit.svg";
 
-type VacancyType = {
+export type VacancyType = {
   id: number;
   company: string;
   new: boolean;
