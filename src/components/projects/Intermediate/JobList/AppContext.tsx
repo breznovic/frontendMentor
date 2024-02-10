@@ -24,8 +24,6 @@ const ActiveTagsProvider: React.FC<{ children: React.ReactNode }> = ({
     updateActiveTags,
   };
 
-  console.log(activeTags, "tags");
-
   return (
     <ActiveTagsContext.Provider value={contextValue}>
       {children}
