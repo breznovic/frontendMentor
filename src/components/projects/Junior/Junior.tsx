@@ -16,6 +16,7 @@ let apps: ComponentType[] = [
 
 const Junior = () => {
   const [appIndex, setAppIndex] = useState(0);
+
   const currentApp = apps[appIndex].component;
 
   const prevApp = () => {
